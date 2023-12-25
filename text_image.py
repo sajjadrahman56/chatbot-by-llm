@@ -30,7 +30,7 @@ st.set_page_config(page_title="Gemini Image Demo")
 
 st.header("You and Me ! Here we go !! ")
 
-input=st.text_input("Input Prompt: ",key="input")
+input = st.text_input("Enter your question here", key="unique_input_key")
 uploaded_file = st.file_uploader("select an image...", type=["jpg", "jpeg", "png"])
 
 image=""   
