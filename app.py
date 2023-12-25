@@ -13,9 +13,10 @@ def get_response(input_text):
      return response.text
 
 st.set_page_config(page_title="Q & A", page_icon=":gem:")
-st.header("Gemini LLM application")
-input = st.text_input("Enter your question here", key="input")
+st.header("I am your FRIEND Gemini")
+st.subheader("Ask me anything and I will try to answer it for you as best as I can" )
 
+input = st.text_input("Enter your question here", key="input")
 submit = st.button("Submit")
 
 
