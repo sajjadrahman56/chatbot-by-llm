@@ -13,13 +13,9 @@ def get_response(input_text):
      return response.text
 
 st.set_page_config(page_title="Q & A", page_icon=":gem:")
-<<<<<<< HEAD
-st.header("I am your FRIEND Gemini")
-st.subheader("Ask me anything and I will try to answer it for you as best as I can" )
-=======
+
 st.header("Here you GO...!")
 input = st.text_input("Enter your question here", key="input")
->>>>>>> 839b0f129662246db2e4f633a60b97d3b280ca15
 
 input = st.text_input("Enter your question here", key="input")
 submit = st.button("Submit")
