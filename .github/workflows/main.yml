@@ -1,10 +1,12 @@
-name: Deploy to Streamlit
+name: Setup Environment
+
 on:
   push:
     branches:
       - main
+
 jobs:
-  deploy:
+  setup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -25,10 +27,3 @@ jobs:
           python -m venv venv
           . venv/bin/activate
           pip install -r requirements.txt
-
-      - name: Deploy to Streamlit
-        env:
-          API_KEY: ${{ secrets.API_KEY }}
-        run: |
-          . venv/bin/activate
-          streamlit run app.py
